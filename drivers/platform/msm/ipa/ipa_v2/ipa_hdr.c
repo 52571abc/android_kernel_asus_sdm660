@@ -1342,9 +1342,6 @@ int ipa2_reset_hdr(bool user_only)
 		ipa_ctx->hdr_tbl.end = 8;
 		ipa_ctx->hdr_tbl.hdr_cnt = 1;
 	}
-	/* there is one header of size 8 */
-	ipa_ctx->hdr_tbl.end = 8;
-	ipa_ctx->hdr_tbl.hdr_cnt = 1;
 
 	IPADBG("reset hdr proc ctx\n");
 	list_for_each_entry_safe(
